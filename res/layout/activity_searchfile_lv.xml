@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/activity_searchfile_lv_imagetype"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/activity_loadfiles_folder" />
+
+    <TextView
+        android:id="@+id/activity_searchfile_lv_filename"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/activity_searchfile_lv_imagetype"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/activity_searchfile_lv_imagetype"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="文件夹名"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/activity_searchfile_lv_filepath"
+        android:layout_width="280sp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/activity_searchfile_lv_imagetype"
+        android:layout_alignLeft="@+id/activity_searchfile_lv_filename"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="绝对路径名"
+        android:textSize="13sp" />
+
+</RelativeLayout>
