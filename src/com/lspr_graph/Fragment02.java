@@ -27,8 +27,8 @@ import android.widget.ZoomControls;
 
 public class Fragment02 extends Fragment {
 
+	private static final String TAG = "Fragment02";
 	private View parentView;
-	private String TAG = "Fragment02";
 	private ZoomControls mZoomControls;
 	private SplineChart01View splineChartView;
 	private SplineChart01_Normal splineChartView_normal;
