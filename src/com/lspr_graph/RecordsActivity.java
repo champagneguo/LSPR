@@ -3,6 +3,7 @@ package com.lspr_graph;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import com.lspr.adapter.RecordAdapter;
 import com.lspr.greendao.DaoMaster;
 import com.lspr.greendao.DaoSession;
 import com.lspr.greendao.record;

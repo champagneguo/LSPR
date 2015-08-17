@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="82dp"
+        android:padding="5dp"
+        android:text="基于LSPR的生化传感检测系统"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/activity_choose_realdata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="57dp"
+        android:padding="5dp"
+        android:text="实时\n数据"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/activity_choose_localdata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/activity_choose_realdata"
+        android:layout_alignBottom="@+id/activity_choose_realdata"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_marginRight="55dp"
+        android:padding="5dp"
+        android:text="本地\n数据"
+        android:textSize="25sp" />
+
+</RelativeLayout>

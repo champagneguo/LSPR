@@ -12,6 +12,10 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Stack;
+
+import com.lspr.adapter.SearchFileAdapter;
+import com.lspr.util.Util;
+
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.database.Cursor;

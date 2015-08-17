@@ -8,6 +8,8 @@ import com.lspr.greendao.DaoMaster.DevOpenHelper;
 import com.lspr.greendao.DaoSession;
 import com.lspr.greendao.record;
 import com.lspr.greendao.recordDao;
+import com.lspr.util.Util;
+
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;

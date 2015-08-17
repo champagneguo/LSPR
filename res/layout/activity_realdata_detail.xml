@@ -1,0 +1,181 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/main_menu" >
+
+        <ImageView
+            android:id="@+id/fragment04_arrowforward"
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="详细频谱数据"
+            android:textColor="#FFFF00"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/activity_realdetail_tv_datatime"
+        android:layout_width="90sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/RelativeLayout1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="数据时间："
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/activity_realdetail_tv_datatimecontent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RelativeLayout1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/activity_realdetail_tv_datatime"
+        android:text="123"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/activity_realdetail_tv_type"
+        android:layout_width="90sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/activity_realdetail_tv_datatimecontent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="光谱仪类型：" />
+
+    <TextView
+        android:id="@+id/activity_realdetail_tv_typecontent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/activity_realdetail_tv_type"
+        android:layout_alignLeft="@+id/activity_realdetail_tv_datatimecontent"
+        android:layout_marginTop="15dp"
+        android:text="TextView"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/activity_realdetail_tv_serialnumber"
+        android:layout_width="90sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/activity_realdetail_tv_type"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="光谱仪型号："
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/activity_realdetail_tv_serialnumbercontent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/activity_realdetail_tv_typecontent"
+        android:layout_below="@+id/activity_realdetail_tv_typecontent"
+        android:layout_marginTop="15dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/activity_realdetail_tv_integration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/activity_realdetail_tv_serialnumber"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="积分时间毫秒：" />
+
+    <TextView
+        android:id="@+id/activity_realdetail_tv_integrationcontent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/activity_realdetail_tv_serialnumbercontent"
+        android:layout_below="@+id/activity_realdetail_tv_serialnumbercontent"
+        android:layout_marginTop="15dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/activity_realdetail_tv_spectrumpixel"
+        android:layout_width="90sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/activity_realdetail_tv_integration"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="光谱像素值：" />
+
+    <TextView
+        android:id="@+id/activity_realdetail_tv_spectrumpixelcontent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/activity_realdetail_tv_integrationcontent"
+        android:layout_below="@+id/activity_realdetail_tv_integrationcontent"
+        android:layout_marginTop="15dp"
+        android:text="TextView" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/activity_realdata_close"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/activity_realdetail_tv_spectrumpixelcontent"
+        android:layout_marginTop="12dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/activity_realdetail_tv_wavelengthcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="15sp"
+                android:text="TextView"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/activity_realdata_btn_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/activity_realdetail_tv_spectrumpixel"
+        android:layout_marginBottom="18dp"
+        android:padding="5dp"
+        android:text=" 关 闭 " />
+
+    <Button
+        android:id="@+id/activity_realdata_btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="18dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/activity_realdetail_tv_spectrumpixelcontent"
+        android:padding="5dp"
+        android:text=" 保 存 " />
+
+</RelativeLayout>
